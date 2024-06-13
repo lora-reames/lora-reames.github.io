@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Since I got laid off from my last job I’ve been spending more time on some of my hobbies. Mostly I’ve been rock climbing. Like many climbers I try to document my climbing journey so I can better track">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keeping Busy, Building My Perfect Climbing Log App">
+<meta property="og:url" content="http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/index.html">
+<meta property="og:site_name" content="Lora.Codes">
+<meta property="og:description" content="Since I got laid off from my last job I’ve been spending more time on some of my hobbies. Mostly I’ve been rock climbing. Like many climbers I try to document my climbing journey so I can better track">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/climbing-log-01.png">
+<meta property="article:published_time" content="2024-06-11T05:00:00.000Z">
+<meta property="article:modified_time" content="2024-06-13T00:44:18.226Z">
+<meta property="article:author" content="Lora Reames">
+<meta property="article:tag" content="Climbing">
+<meta property="article:tag" content="React">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/climbing-log-01.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/avatar.png">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/avatar.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/avatar.png">
+        
+      
+    
+    <!-- title -->
+    <title>Keeping Busy, Building My Perfect Climbing Log App</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.1.1">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&text=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&is_video=false&description=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Keeping Busy, Building My Perfect Climbing Log App&body=Check out this article: http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&name=Keeping Busy, Building My Perfect Climbing Log App&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&t=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What%E2%80%99s-Missing"><span class="toc-number">1.</span> <span class="toc-text">What’s Missing?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What-Will-I-Do-Instead"><span class="toc-number">2.</span> <span class="toc-text">What Will I Do Instead</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Progress"><span class="toc-number">3.</span> <span class="toc-text">Progress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Steps"><span class="toc-number">4.</span> <span class="toc-text">Next Steps</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-Repo"><span class="toc-number">4.1.</span> <span class="toc-text">Github Repo</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Keeping Busy, Building My Perfect Climbing Log App
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Lora Reames</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-06-11T05:00:00.000Z" class="dt-published" itemprop="datePublished">2024-06-11</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Climbing/" rel="tag">Climbing</a>, <a class="p-category" href="/tags/React/" rel="tag">React</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>Since I got laid off from my last job I’ve been spending more time on some of my hobbies. Mostly I’ve been rock climbing. Like many climbers I try to document my climbing journey so I can better track my progress and training. There are lots of apps targeting this interest but I’ve found many of them focus on a different experience than what I want and that has become a frustrating itch.</p>
+<p>One of my first software engineering jobs was working on hybrid mobile apps, I haven’t built one in a while so I decided to scratch my climbing app itch and keep my old mobile skills sharp.</p>
+<h2 id="What’s-Missing"><a href="#What’s-Missing" class="headerlink" title="What’s Missing?"></a>What’s Missing?</h2><p>What’s wrong with the other climbing apps? Why don’t they provide what I want? There are several great apps but its really a focus issue. Climbing apps fall into one or more of the following categories: Climbing Training (<a target="_blank" rel="noopener" href="https://www.crimpd.com/">Crimpd</a>, <a target="_blank" rel="noopener" href="https://latticetraining.com/">Lattice</a>), Training Boards (<a target="_blank" rel="noopener" href="https://moonclimbing.com/">Moon</a>, <a target="_blank" rel="noopener" href="https://kilterboardapp.com/">Kilter</a>, etc), Spray Wall (<a target="_blank" rel="noopener" href="https://www.getstokt.com/">Stokt</a>, <a target="_blank" rel="noopener" href="https://www.arcadebouldering.com.de/en/i/retro-flash">Retro Flash</a>), Guidebook (<a target="_blank" rel="noopener" href="https://kayaclimb.com/">Kaya</a>, <a target="_blank" rel="noopener" href="https://www.mountainproject.com/">Mountain Project</a>), Logbook (<a target="_blank" rel="noopener" href="https://pinnacleclimb.com/">Pinnacle</a>), and Social (<a target="_blank" rel="noopener" href="https://kayaclimb.com/">Kaya</a>). While all of these are of interest to me and most apps fit more than one category, the area that is most important to me right now is a great <strong>Logbook</strong> and I feel that the presently available options for that fail in execution or focus more on the other categories than I would like.</p>
+<p>I have a few things that disappoint me about the current apps offering log book features.</p>
+<p>First: the top thing that turns me away from wanting to use these apps is how many of them require or pressure you to create an account and sign in just to explore how their app works! Frequently there is also pressure to upgrade to a premium version and questionable divisions between premium and base features.</p>
+<p>Second: Limited Use, apps focused on outdoor use care about tracking well known climbs. Gym climbing apps are inconsistently useful because of lack of gym participation.</p>
+<p>Third: Focus, many apps try to solve multiple problems and Logbook features are pushed out of view by other features.</p>
+<h2 id="What-Will-I-Do-Instead"><a href="#What-Will-I-Do-Instead" class="headerlink" title="What Will I Do Instead"></a>What Will I Do Instead</h2><p>Ultimately what I’m looking for in a log book is the ability to quickly log my sessions and climbs im working on, recording my progress across indoor and outdoor climbs from any location be it the local outdoor crag, a friend’s home spray wall, my regular gym or one I’m just visiting for the day.</p>
+<p>I want a great offline experience before any online or social features,<br>I want to explore basic stats about my climbing journey and uncover data insights into my climbing performance,<br>I want to connect my media to my climbs,<br>and I don’t want to sign in to get started!</p>
+<p>Once I’ve achieved those initial goals I can explore whats worth adding.</p>
+<h2 id="Progress"><a href="#Progress" class="headerlink" title="Progress"></a>Progress</h2><p>I wanted to start from a familiar place and chose to start my work with ionic framework UI components but I didn’t want to be <em>too comfortable</em> so I chose to start this project with React instead of Angular which I have much more experience using. These choices allow me to lean on the familiarity of Ionic UI and capacitor for native device APIs while I level up my React knowledge closer to what I have with Angular so I can feel more confident working with it in the future.</p>
+<p>So far I’ve setup my basic app structure, tab navigation, and a card based list of climbs each with a name, location, description, tags, and climbing grade.</p>
+<p><img src="/images/climbing-log-01.png" alt="climbing log app screenshot"></p>
+<h2 id="Next-Steps"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps</h2><ul>
+<li>logging attempts and climbing sessions</li>
+<li>saving photos and videos</li>
+<li>support for multiple grade systems and grade conversions</li>
+<li>updating the color of the grade icon based on a grade range</li>
+</ul>
+<h3 id="Github-Repo"><a href="#Github-Repo" class="headerlink" title="Github Repo"></a><a target="_blank" rel="noopener" href="https://github.com/lora-reames/climbing-log">Github Repo</a></h3><p>At this time I don’t have a plan to commercialize this, my work here is for my personal use and exploration. If you’re interested in trying this app you can do your own build from this repo or ask me directly for a demo build if we happen to climb together.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What%E2%80%99s-Missing"><span class="toc-number">1.</span> <span class="toc-text">What’s Missing?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What-Will-I-Do-Instead"><span class="toc-number">2.</span> <span class="toc-text">What Will I Do Instead</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Progress"><span class="toc-number">3.</span> <span class="toc-text">Progress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Steps"><span class="toc-number">4.</span> <span class="toc-text">Next Steps</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Github-Repo"><span class="toc-number">4.1.</span> <span class="toc-text">Github Repo</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&text=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&is_video=false&description=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Keeping Busy, Building My Perfect Climbing Log App&body=Check out this article: http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&title=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&name=Keeping Busy, Building My Perfect Climbing Log App&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/06/11/Keeping-Busy-Building-My-Perfect-Climbing-Log-App/&t=Keeping Busy, Building My Perfect Climbing Log App"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2024
+    Lora Reames
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
